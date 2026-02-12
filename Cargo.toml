@@ -8,7 +8,6 @@ readme = "README.md"
 homepage = "https://github.com/betterhyq/crate-package-template"
 repository = "https://github.com/betterhyq/crate-package-template.git"
 license = "MIT"
-license-file = "LICENSE"
 keywords = [""]
 categories = ["development-tools"]
 
