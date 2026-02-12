@@ -1,6 +1,8 @@
 {
   "scripts": {
+    "test": "cargo test",
     "build": "cargo build",
+    "build:release": "cargo build --release",
     "format": "cargo fmt"
   },
   "packageManager": "pnpm@10.28.0"
