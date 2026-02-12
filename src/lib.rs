@@ -1,9 +1,5 @@
-fn add_two_numbers(a: i32, b: i32) -> i32 {
+pub fn add_two_numbers(a: i32, b: i32) -> i32 {
     a + b
-}
-
-fn main() {
-    println!("The sum of 1 and 2 is {}", add_two_numbers(1, 2));
 }
 
 #[cfg(test)]
