@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "cargo test",
+    "test": "cargo test -- --show-output",
     "build": "cargo build",
     "build:release": "cargo build --release",
     "format": "cargo fmt"
