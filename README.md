@@ -4,6 +4,14 @@
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/packageName)
 ![Crates.io License](https://img.shields.io/crates/l/packageName)
 
+## Installation
+
+Add this crate by cargo
+
+```bash
+cargo add packageName
+```
+
 ## Contribution
 
 <details>
