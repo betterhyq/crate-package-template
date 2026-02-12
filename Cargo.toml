@@ -1,6 +1,15 @@
 [package]
-name = "hello"
-version = "0.1.0"
+name = "crate-package-template"
+version = "0.0.1"
+authors = ["YONGQI <betterhyq@qq.com>"]
 edition = "2024"
+description = "A template for creating a crate package"
+readme = "README.md"
+homepage = "https://github.com/betterhyq/crate-package-template"
+repository = "https://github.com/betterhyq/crate-package-template.git"
+license = "MIT"
+license-file = "LICENSE"
+keywords = [""]
+categories = ["development-tools"]
 
 [dependencies]
