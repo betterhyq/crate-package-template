@@ -4,12 +4,19 @@
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/packageName)
 ![Crates.io License](https://img.shields.io/crates/l/packageName)
 
+`packageName` is
+
 ## Installation
 
 Add this crate by cargo
 
 ```bash
 cargo add packageName
+```
+
+## Usage
+
+```rust
 ```
 
 ## Contribution
@@ -22,6 +29,10 @@ cargo add packageName
 - Run tests using `cargo test` or `cargo run`
 
 </details>
+
+## Credits
+
+`packageName` has been inspired by several outstanding projects in the community:
 
 ## License
 
