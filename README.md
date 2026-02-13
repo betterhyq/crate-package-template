@@ -2,8 +2,8 @@
 
 ![Crates.io Version](https://img.shields.io/crates/v/packageName)
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/packageName)
-![Crates.io License](https://img.shields.io/crates/l/packageName)
 ![docs.rs](https://img.shields.io/docsrs/packageName)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/betterhyq/packageName)
 ![GitHub Repo stars](https://img.shields.io/github/stars/betterhyq/packageName)
 
 `packageName` is
