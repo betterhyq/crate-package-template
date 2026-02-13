@@ -16,7 +16,7 @@ import prompts from "prompts";
 
   // Update Cargo.toml
   const cargoToml = fs.readFileSync('Cargo.toml', 'utf8');
-  const updatedCargoToml = cargoToml.replace(/name = "packageName"/g, `name = "${response.packageName}"`);
+  const updatedCargoToml = cargoToml.replace(/packageName/g, response.packageName);
   fs.writeFileSync('Cargo.toml', updatedCargoToml);
 
   // Update README.md
