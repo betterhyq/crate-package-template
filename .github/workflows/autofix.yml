@@ -30,10 +30,14 @@ jobs:
         run: 'git config --global user.name "betterhyq"'
       - name: Add Changes
         run: git add .
-      - name: Commit Changes
-        run: 'git commit -am "chore: format code"'
-      - name: Push Changes
-        run: git push
+      - name: Commit and Push
+        run: |
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: format code"
+            git push
+          else
+            echo "No changes to commit"
+          fi
   automd:
     name: automd
     runs-on: ubuntu-latest
@@ -59,7 +63,11 @@ jobs:
         run: 'git config --global user.name "betterhyq"'
       - name: Add Changes
         run: git add .
-      - name: Commit Changes
-        run: 'git commit -am "chore: update README.md"'
-      - name: Push Changes
-        run: git push
+      - name: Commit and Push
+        run: |
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update README.md"
+            git push
+          else
+            echo "No changes to commit"
+          fi
