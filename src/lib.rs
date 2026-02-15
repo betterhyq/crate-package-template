@@ -1,4 +1,4 @@
-use log::{trace};
+use log::trace;
 
 pub fn add_two_numbers(a: i32, b: i32) -> i32 {
     trace!("add_two_numbers(a, b) = {}", a + b);

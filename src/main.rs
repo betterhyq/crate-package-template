@@ -1,4 +1,4 @@
-use log::{trace};
+use log::trace;
 use packageName::add_two_numbers;
 
 fn main() {
