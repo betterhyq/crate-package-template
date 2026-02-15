@@ -1,0 +1,57 @@
+name: Autofix
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  autofmt:
+    name: autofmt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+      - name: Run Format
+        run: pnpm format
+      - name: Add Changes
+        run: git add .
+      - name: Commit Changes
+        run: git commit -am "chore: format code"
+      - name: Push Changes
+        run: git push
+  automd:
+    name: automd
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install Automd-rs
+        run: cargo install automd-rs
+      - name: Run Automd-rs
+        run: automd-rs
+      - name: Add Changes
+        run: git add .
+      - name: Commit Changes
+        run: git commit -am "chore: update README.md"
+      - name: Push Changes
+        run: git push
