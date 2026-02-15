@@ -24,6 +24,10 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
       - name: Run Format
         run: pnpm format
+      - name: Global Setup Git
+        run: 'git config --global user.email "betterhyq@qq.com"'
+      - name: Global Setup Git
+        run: 'git config --global user.name "betterhyq"'
       - name: Add Changes
         run: git add .
       - name: Commit Changes
@@ -49,6 +53,10 @@ jobs:
         run: cargo install automd-rs
       - name: Run Automd-rs
         run: automd-rs
+      - name: Global Setup Git
+        run: 'git config --global user.email "betterhyq@qq.com"'
+      - name: Global Setup Git
+        run: 'git config --global user.name "betterhyq"'
       - name: Add Changes
         run: git add .
       - name: Commit Changes
