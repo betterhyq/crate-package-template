@@ -11,4 +11,10 @@ license = "MIT"
 keywords = [""]
 categories = ["development-tools"]
 
+[[bin]]
+name = "packageName"
+path = "src/main.rs"
+
 [dependencies]
+log = "0.4.29"
+env_logger = "0.11"
