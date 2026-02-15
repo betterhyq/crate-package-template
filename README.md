@@ -19,7 +19,7 @@ Add this crate by cargo
 <!-- automdrs:cargo-add -->
 
 ```sh
-cargo add promptt
+cargo add packageName
 ```
 
 <!-- /automdrs -->
@@ -52,6 +52,9 @@ Made by [@YONGQI](https://github.com/betterhyq) 💛
 <!-- /automdrs -->
 
 <!-- automdrs:with-automdrs -->
+
 ---
-<br>_🛠️ auto updated with [automd-rs](https://github.com/betterhyq/automd-rs)_
+
+_🛠️ auto updated with [automd-rs](https://github.com/betterhyq/automd-rs)_
+
 <!-- /automdrs -->
