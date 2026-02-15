@@ -23,4 +23,9 @@ import prompts from "prompts";
   const readme = fs.readFileSync('README.md', 'utf8');
   const updatedReadme = readme.replace(/packageName/g, response.packageName);
   fs.writeFileSync('README.md', updatedReadme);
+
+  // Update docs/.vitepress/config.mts
+  const vitepressConfig = fs.readFileSync('docs/.vitepress/config.mts', 'utf8');
+  const updatedVitepressConfig = vitepressConfig.replace(/packageName/g, response.packageName);
+  fs.writeFileSync('docs/.vitepress/config.mts', updatedVitepressConfig);
 })();
