@@ -3,6 +3,7 @@
     "build": "cargo build",
     "build:release": "cargo build --release",
     "format": "cargo fmt",
+    "lint": "cargo clippy",
     "test": "cargo test -- --show-output",
     "test:coverage": "cargo tarpaulin --fail-under 85 --exclude-files 'src/main.rs'",
     "start": "node scripts/packageName.mjs",
