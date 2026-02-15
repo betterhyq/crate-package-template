@@ -27,7 +27,7 @@ jobs:
       - name: Add Changes
         run: git add .
       - name: Commit Changes
-        run: git commit -am "chore: format code"
+        run: 'git commit -am "chore: format code"'
       - name: Push Changes
         run: git push
   automd:
@@ -52,6 +52,6 @@ jobs:
       - name: Add Changes
         run: git add .
       - name: Commit Changes
-        run: git commit -am "chore: update README.md"
+        run: 'git commit -am "chore: update README.md"'
       - name: Push Changes
         run: git push
