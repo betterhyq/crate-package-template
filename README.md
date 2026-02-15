@@ -5,7 +5,7 @@
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/packageName)
 ![docs.rs](https://img.shields.io/docsrs/packageName)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/betterhyq/packageName)
-![GitHub Repo stars](https://img.shields.io/github/stars/betterhyq/xxxxxx)
+![GitHub Repo stars](https://img.shields.io/github/stars/betterhyq/packageName)
 <!-- /automdrs -->
 
 `packageName` is
