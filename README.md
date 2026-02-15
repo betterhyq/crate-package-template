@@ -10,13 +10,19 @@
 
 `packageName` is
 
+**[Full documentation →](https://betterhyq.github.io/packageName/)**
+
 ## Installation
 
 Add this crate by cargo
 
-```bash
-cargo add packageName
+<!-- automdrs:cargo-add -->
+
+```sh
+cargo add promptt
 ```
+
+<!-- /automdrs -->
 
 ## Usage
 
@@ -33,10 +39,6 @@ cargo add packageName
 - Run tests using `cargo test` or `cargo run`
 
 </details>
-
-## Credits
-
-`packageName` has been inspired by several outstanding projects in the community:
 
 ## License
 
