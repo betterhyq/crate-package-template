@@ -10,6 +10,8 @@ jobs:
   autofmt:
     name: autofmt
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for git push
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -41,6 +43,8 @@ jobs:
   automd:
     name: automd
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for git push
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
