@@ -5,13 +5,17 @@
     "format": "cargo fmt",
     "test": "cargo test -- --show-output",
     "test:coverage": "cargo tarpaulin --fail-under 85 --exclude-files 'src/main.rs'",
-    "start": "node scripts/packageName.mjs"
+    "start": "node scripts/packageName.mjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "simple-git-hooks": {
     "pre-push": "pnpm format"
   },
   "dependencies": {
-    "prompts": "2.4.2"
+    "prompts": "2.4.2",
+    "vitepress": "1.6.4"
   },
   "devDependencies": {
     "@types/node": "25.2.3",
